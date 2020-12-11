@@ -1,24 +1,23 @@
 /**
- * Merge breedList1 into breedListTwo. If there are matching keys, merge their pet lists
+ * Merge breedListOne into breedListTwo. If there are matching keys, merge their pet lists
  **/
 
-const mergeBreeds = (obj1, obj2) => {
-  const merged = {};
+const mergeBreeds = (list1, list2) => {
+  const merged = { ...list2 };
 
-  for (let breed in obj1) {
-    if (obj2[breed]) {
+  Object.keys(list1).forEach((breed) => {
+    if (list2[breed]) {
       merged[breed] = {
-        pets: [...obj1[breed].pets, ...obj2[breed].pets],
+        pets: [...list1[breed].pets, ...list2[breed].pets],
       };
     } else {
       merged[breed] = {
-        ...obj1[breed],
-        ...obj2[breed],
+        ...list1[breed],
       };
     }
-  }
+  });
 
-  return { ...obj2, ...merged };
+  return merged;
 };
 
 module.exports = { mergeBreeds };

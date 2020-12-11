@@ -1,6 +1,6 @@
 const { breedListOne, breedListTwo } = require("../__fixtures__/breedLists");
 const { mergeBreeds } = require("../solutions/mergeBreeds.js");
-// const { mergeBreeds } = require("../exercises/mergeBreeds.js");
+// const { mergeBreeds } = require("../katas/mergeBreeds.js");
 
 test("mergeBreeds", () => {
   const mergedBreeds = mergeBreeds(breedListOne, breedListTwo);
