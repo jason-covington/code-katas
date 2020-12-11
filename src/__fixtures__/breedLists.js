@@ -6,7 +6,7 @@ const breedListOne = {
     pets: ["Sarge", "Master", "Thor"],
   },
   Dachshund: {
-    pets: ["Squeeky", "Don", "Mr Snuggles"],
+    pets: ["Squeaky", "Don", "Mr Snuggles"],
   },
 };
 

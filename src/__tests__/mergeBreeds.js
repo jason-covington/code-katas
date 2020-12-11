@@ -21,7 +21,7 @@ test("mergeBreeds", () => {
       },
       "Dachshund": Object {
         "pets": Array [
-          "Squeeky",
+          "Squeaky",
           "Don",
           "Mr Snuggles",
           "Happy",
