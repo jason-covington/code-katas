@@ -11,18 +11,7 @@
  */
 
 const minimumSteps = (numbers, value) => {
-  const sortedNumbers = [...numbers].sort((a, b) => a - b);
-  let count = 0,
-    currSum = sortedNumbers[0];
-
-  for (let i = 1; i < sortedNumbers.length; i++) {
-    if (currSum >= value) {
-      return count;
-    }
-    count++;
-    currSum += sortedNumbers[i];
-  }
-  return count;
+  return;
 };
 
 module.exports = { minimumSteps };
